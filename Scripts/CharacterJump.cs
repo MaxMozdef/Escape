@@ -4,6 +4,7 @@ public class CharacterJump : MonoBehaviour
 {
     [SerializeField] protected Rigidbody charRB;
     [SerializeField] private float jampPower;
+    
 
 
     private void Update()

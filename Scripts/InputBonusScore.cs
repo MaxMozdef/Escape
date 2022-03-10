@@ -8,12 +8,11 @@ public class InputBonusScore : ScoreText
         if (Input.GetMouseButtonDown(0))
         {
             countCount++;
-            if (countCount == 7)
+            if (countCount == 14)
             {
                 gameScore++;
                 countCount = 0;
             }
-
             ChangeCountScoreUI();
         }
     }
