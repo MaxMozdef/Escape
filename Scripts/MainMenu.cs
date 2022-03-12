@@ -3,7 +3,7 @@ using TMPro;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private GameObject startButton, exitButton, carackterRobberClone, carackterRobber, tapToGo;
+    [SerializeField] private GameObject startButton, exitButton, carackterRobberClone, carackterRobber, tapToGo, onOffButton;
     [SerializeField] private TextMeshProUGUI totalScoreViwe, currentAccount;
     [SerializeField] private ScoreText textScore;
     
@@ -22,6 +22,7 @@ public class MainMenu : MonoBehaviour
         carackterRobber.SetActive(false);
         carackterRobberClone.SetActive(true);
         tapToGo.SetActive(false);
+        onOffButton.SetActive(true);
     }
     public void StartGame()
     {
@@ -39,6 +40,7 @@ public class MainMenu : MonoBehaviour
         Time.timeScale = 1;
         tapToGo.SetActive(false);
         currentAccount.gameObject.SetActive(true);
+        onOffButton.SetActive(false);
     }
     public void ExitGame()
     {
